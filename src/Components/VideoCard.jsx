@@ -35,7 +35,7 @@ function VideoCard({ displayData, setRemoveVideo,insideContainer }) {
 
     await addToHistory(videoHistory);
   };
-  const RemoveMedia = async (id) => {
+const RemoveMedia = async (id) => {
     const Response = await deleteVideo(id);
     setRemoveVideo(true);
   };

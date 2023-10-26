@@ -35,7 +35,7 @@ function Add({ setuploadVideoServerRespnse }) {
       toast.warning("please fill the form");
     } else {
       const response = await uploadVideo(video);
-      console.log(response);
+     
       if (response.status >= 200 && response.status < 300) {
         // reset state
         setVideo({  id: "",
